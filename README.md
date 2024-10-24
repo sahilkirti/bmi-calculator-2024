@@ -1,5 +1,5 @@
 # BMI calculator
-adding new feature 1
+adding new feature 2
 
 A new Flutter project created with FlutLab - https://flutlab.io
 
