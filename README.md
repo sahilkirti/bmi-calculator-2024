@@ -13,12 +13,6 @@ A **Flutter-based BMI Calculator** app that provides users with a BMI calculatio
 
 ---
 
-## Screenshots
-
-_(Insert screenshots of the app here)_
-
----
-
 ## Getting Started
 
 Follow these instructions to get a local copy of the project up and running.
