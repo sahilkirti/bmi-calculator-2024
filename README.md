@@ -1,5 +1,6 @@
 # BMI calculator
-A new Flutter project created with FlutLab - https://flutlab.io
+BMI Calculator App
+A Flutter-based BMI Calculator app that not only calculates the Body Mass Index (BMI) but also provides personalized health tips based on BMI categories. This app is tailored to stand out by offering additional guidance and motivation to help users make informed health decisions.
 
 ## Getting Started
 
