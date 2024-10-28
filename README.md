@@ -27,7 +27,7 @@ Follow these instructions to get a local copy of the project up and running.
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/sahilkirti/bmi-calculator-2024
-    cd bmi-calculator
+    cd bmi-calculator-2024
     ```
 
 2. **Install dependencies**:
