@@ -59,17 +59,3 @@ Here's an overview of the directory structure for this project:
 ├── pubspec.yaml                     # Project dependencies and assets
 └── README.md                        # Project documentation
 
-## Usage
-
-1. **Enter Height and Weight**: Enter your height in cm and weight in kg.
-2. **Calculate BMI**: Tap on "Calculate BMI" to view your BMI result.
-3. **View Health Tips**: After the BMI calculation, personalized health advice based on your BMI category will be displayed.
-
----
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
-
----
-
