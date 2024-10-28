@@ -1,39 +1,66 @@
-BMI Calculator App
-A Flutter-based BMI Calculator app that provides users with a BMI calculation and personalized health advice based on their BMI category. This project is designed to stand out from typical BMI calculators by offering tailored health tips, helping users make informed health choices.
+# BMI Calculator App
 
-Features
-BMI Calculation: Input height (in cm) and weight (in kg) to calculate Body Mass Index (BMI).
-Personalized Health Tips: Based on BMI categories (Underweight, Normal, Overweight, Obese), the app provides relevant health advice and motivation.
-Intuitive UI: A visually appealing interface with customized widgets and smooth gradients for an enhanced user experience.
-BMI Meter: Visual representation of BMI with a color-coded meter indicating the BMI category.
-Screenshots
-(Insert screenshots of the app here)
+A **Flutter-based BMI Calculator** app that provides users with a BMI calculation and personalized health advice based on their BMI category. This project is designed to stand out from typical BMI calculators by offering tailored health tips, helping users make informed health choices.
 
-Getting Started
+---
+
+## Features
+
+- **BMI Calculation**: Input height (in cm) and weight (in kg) to calculate Body Mass Index (BMI).
+- **Personalized Health Tips**: Based on BMI categories (_Underweight_, _Normal_, _Overweight_, _Obese_), the app provides relevant health advice and motivation.
+- **Intuitive UI**: A visually appealing interface with customized widgets and smooth gradients for an enhanced user experience.
+- **BMI Meter**: Visual representation of BMI with a color-coded meter indicating the BMI category.
+
+---
+
+## Screenshots
+
+_(Insert screenshots of the app here)_
+
+---
+
+## Getting Started
+
 Follow these instructions to get a local copy of the project up and running.
 
-Prerequisites
-Flutter SDK
-Any IDE (e.g., VS Code, Android Studio)
-Installation
-Clone the repository:
+### Prerequisites
 
-bash
-Copy code
-git clone https://github.com/yourusername/bmi-calculator.git
-cd bmi-calculator
-Install dependencies:
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- Any IDE (e.g., VS Code, Android Studio)
 
-bash
-Copy code
-flutter pub get
-Run the app:
+### Installation
 
-bash
-Copy code
-flutter run
-Directory Structure
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/bmi-calculator.git
+    cd bmi-calculator
+    ```
+
+2. **Install dependencies**:
+    ```bash
+    flutter pub get
+    ```
+
+3. **Run the app**:
+    ```bash
+    flutter run
+    ```
+
+---
+
+## Directory Structure
+
 Here's an overview of the directory structure for this project:
 
-plaintext
-Copy code
+```plaintext
+.
+├── lib
+│   ├── main.dart                   # Main entry point of the application
+│   ├── screens
+│   │   └── bmi_calculator.dart      # Core BMI Calculator screen with BMI calculations and personalized tips
+│   └── widgets                      # Custom widgets directory
+│       ├── custom_button.dart       # Reusable custom button widget
+│       ├── rounded_card.dart        # Rounded card widget for consistent styling
+│       └── bmi_meter.dart           # BMI meter widget displaying the BMI level with color indication
+├── pubspec.yaml                     # Project dependencies and assets
+└── README.md                        # Project documentation
