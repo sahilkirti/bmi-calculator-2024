@@ -1,4 +1,4 @@
-name: bmi_calculator
+name: bmi_calculator1
 description: A new Flutter project.
 
 version: 1.0.0+1
@@ -10,7 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^5.0.0
-  syncfusion_flutter_gauges: ^20.3.47
+  fl_chart: ^0.40.0
+  shared_preferences: ^2.0.13
   
 dev_dependencies:
   flutter_test:

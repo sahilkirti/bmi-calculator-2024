@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../widgets/rounded_card.dart';
 import '../widgets/custom_button.dart';
-import '../widgets/bmi_meter.dart'; // Import the new BMI meter widget
+import '../widgets/bmi_meter.dart';
+import 'nutrition_guide.dart'; // Import the Nutrition Guide screen
+import 'challenge_screen.dart'; // Import the Challenge screen
 
 class BMICalculator extends StatefulWidget {
   @override
@@ -14,6 +16,7 @@ class _BMICalculatorState extends State<BMICalculator> {
   final TextEditingController _weightController = TextEditingController();
   double _bmi = 0.0;
   String _bmiResult = '';
+  String _goal = '';
 
   void _calculateBMI() {
     final double height = double.tryParse(_heightController.text) ?? 0;
@@ -23,10 +26,12 @@ class _BMICalculatorState extends State<BMICalculator> {
       setState(() {
         _bmi = weight / ((height / 100) * (height / 100));
         _bmiResult = _getBMIResult(_bmi);
+        _goal = _getGoalBasedOnBMI(_bmi);
       });
     } else {
       setState(() {
         _bmiResult = "Please enter valid numbers!";
+        _goal = '';
       });
     }
   }
@@ -40,6 +45,16 @@ class _BMICalculatorState extends State<BMICalculator> {
       return "Overweight";
     } else {
       return "Obese";
+    }
+  }
+
+  String _getGoalBasedOnBMI(double bmi) {
+    if (bmi < 18.5) {
+      return 'Gain Weight';
+    } else if (bmi >= 18.5 && bmi < 24.9) {
+      return 'Maintain Weight';
+    } else {
+      return 'Lose Weight';
     }
   }
 
@@ -114,8 +129,7 @@ class _BMICalculatorState extends State<BMICalculator> {
                   onPressed: _calculateBMI,
                 ),
                 SizedBox(height: 30),
-                if (_bmi != 0.0)
-                  BmiMeter(bmi: _bmi), // Display the custom BMI meter widget
+                if (_bmi != 0.0) BmiMeter(bmi: _bmi),
                 SizedBox(height: 20),
                 RoundedCard(
                   child: Column(
@@ -143,6 +157,35 @@ class _BMICalculatorState extends State<BMICalculator> {
                       ),
                     ],
                   ),
+                ),
+                SizedBox(height: 20),
+                if (_goal.isNotEmpty)
+                  CustomButton(
+                    text: 'View Nutrition Guide',
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => NutritionGuide(
+                            bmi: _bmi,
+                            goal: _goal,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                SizedBox(height: 20),
+                // Button to navigate to the Challenge Screen
+                CustomButton(
+                  text: 'Join Challenge',
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ChallengeScreen(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
