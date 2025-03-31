@@ -1,8 +1,8 @@
-# BMI Calculator App
+# BMI Calculator App 
 
 A **Flutter-based BMI Calculator** app that provides users with a BMI calculation and personalized health advice based on their BMI category. This project is designed to stand out from typical BMI calculators by offering tailored health tips, helping users make informed health choices.
 
----
+-----
 
 ## Features
 
