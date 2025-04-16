@@ -4,7 +4,7 @@ A **Flutter-based BMI Calculator** app that provides users with a BMI calculatio
 
 -----
 
-## Features -
+## Features-
 
 - **BMI Calculation**: Input height (in cm) and weight (in kg) to calculate Body Mass Index (BMI).
 - **Personalized Health Tips**: Based on BMI categories (_Underweight_, _Normal_, _Overweight_, _Obese_), the app provides relevant health advice and motivation.
