@@ -11,7 +11,7 @@ A **Flutter-based BMI Calculator** app that provides users with a BMI calculatio
 - **Intuitive UI**: A visually appealing interface with customized widgets and smooth gradients for an enhanced user experience.
 - **BMI Meter**: Visual representation of BMI with a color-coded meter indicating the BMI category.
 
----
+----
 
 ## Getting Started
 
